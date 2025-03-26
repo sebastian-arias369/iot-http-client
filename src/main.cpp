@@ -8,8 +8,8 @@
 
 Adafruit_SHT31 sht31;
 
-const char* ssid = "iPhonepedro";
-const char* password = "pedro2002";
+const char *ssid = "83ae2d";
+const char *password = "ARIADNA1012";
 const char *host = "codelab.denkitronik.com";                                                     
 const int port = 8080;
 
@@ -42,7 +42,7 @@ void loop() {
     }
 
     // Enviar solicitud HTTP correcta
-    cliente.print("GET /thingname/Sensores-pedro?temperatura=" + String(Temperatura) + 
+    cliente.print("GET /thingname/Sensores-arias?temperatura=" + String(Temperatura) + 
               "&humedad=" + String(Humedad) + " HTTP/1.1\r\nHost: " + String(host) + "\r\nConnection: close\r\n\r\n");
 
 
